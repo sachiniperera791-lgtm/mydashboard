@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanka Fresh Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="topbar">
+ 
+</button>
+    <button id="themeToggle" type="button">
+        🌙 Dark Mode
+    </button>
+
+
+<div class="admin-info">◉ Admin</div>
+
+
+</header>
+
+    </div></header>
+    <aside class="sidebar"><h2>🛒Lanka Fresh Mart</h2>
+      
+<button id="menuToggle" type="button" aria-label="Toggle navigation">
+    ☰
+</button>
+
+<nav class="nav-links" id="navLinks">
+    <a href="#dashboard" class="nav-link active">Dashboard</a>
+    <a href="#sales" class="nav-link">Sales</a>
+    <a href="#reports" class="nav-link">Reports</a>
+    <a href="#settings" class="nav-link">Settings</a>
+</nav>
+
+           
+       </aside>
+    </header>
+    <main id ="dashboard">
+    <h1> Sales Dashboard</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <p id="revenue"></p>
+            </div>
+        <div class="card">
+            <h3>Units Sold</h3>
+            <p id="units"></p>
+            </div>
+        <div class="card">
+            <h3>Best Month</h3>
+            <p id="month"></P>
+            </div>
+         <div class="card" >  
+            <h3>Best Branch</h3>
+            <p id="branch"></P>
+            </div>
+    </div>
+    <div class="charts">
+        <div class="card" id="sales">
+            <h3>Monthly Revenue(LKR '000)</h3>
+            <canvas id ="lineChart"></canvas>
+            
+        </div>
+    <div class="card" id="reports">
+     <h3>Revenue By Branch</h3>
+     <canvas id ="barChart"></canvas>
+     </div>
+    </div>
+     <footer id="settings">Lanka Fresh Mart
+      Dashboard</footer>
+      </main>
+      <script 
+      src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="script.js"></script>
+
+</body>
+</html>
